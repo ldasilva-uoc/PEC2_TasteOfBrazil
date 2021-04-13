@@ -85,10 +85,11 @@ h1 {
   font-size: 7rem;
   color: var(--blue-brazil);
   width: 300px;
-  margin: auto;
-  margin-top: 30%;
   text-shadow: -1px 0 var(--yellow-brazil), 0 1px var(--yellow-brazil),
     1px 0 var(--yellow-brazil), 0 -1px var(--yellow-brazil);
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
 }
 h1 span {
   font-size: 9rem;
@@ -105,6 +106,16 @@ h1 span {
 #portada main {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#portada main div:before {
+  content: "";
+  display: inline-block;
+  height: 90%;
+  vertical-align: middle;
 }
 
 /* Categoria*/
@@ -291,7 +302,7 @@ h1 span {
   h1 {
     font-size: 9rem;
     width: 500px;
-    margin-top: 20%;
+    margin-bottom: 5%;
   }
 
   h1 span {
@@ -346,7 +357,6 @@ h1 span {
   h1 {
     font-size: 8rem;
     width: 600px;
-    margin-top: 13%;
   }
 
   h1 span {
