@@ -144,7 +144,7 @@ h1 span {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: left;
 }
 
 #categoria main section ul li {
@@ -369,8 +369,6 @@ h1 span {
 
   /* Categoría*/
 
-  #categoria main section ul li {
-  }
   #categoria main section ul li img {
     display: block;
   }
