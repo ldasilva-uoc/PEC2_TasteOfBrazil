@@ -116,7 +116,7 @@ h1 span {
 #portada main div:before {
   content: "";
   display: inline-block;
-  height: 90%;
+  height: 70%;
   vertical-align: middle;
 }
 
