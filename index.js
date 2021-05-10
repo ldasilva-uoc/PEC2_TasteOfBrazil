@@ -7,13 +7,11 @@ h1.onmouseout = function() {change_color_blue()};
 
 function change_color_yellow()
 {
-    h1.setAttribute("style", "font-size: 5rem")
-    span.setAttribute("style", "font-size: 12rem")
+  
  
 }
 
 function change_color_blue()
 {
-    h1.setAttribute("style", "font-size: 7rem")
-    span.setAttribute("style", "font-size: 9rem")
+    
 }

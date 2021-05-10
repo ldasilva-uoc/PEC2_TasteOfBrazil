@@ -18,7 +18,8 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  justify-content: center;
+  width: 100%;
   background-color: var(--background-color);
 }
 
@@ -42,17 +43,72 @@ h3 {
 
 /* Header */
 
-nav {
-  width: 80%;
-  margin-left: 0;
-}
-
-body:not(#portada) nav {
-  margin: 0 auto;
-}
-
 header {
-  padding: 10px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+header div img {
+  width: 20%;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6%;
+  width: 100%;
+  margin-top: 40%;
+  background-color: rgba(148, 133, 0, 0.05);
+}
+
+footer ul li {
+  list-style: none;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  padding: 0;
+  margin-top: 5%;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--blue-brazil);
+}
+footer p {
+  margin-top: 2%;
+  color: var(--blue-brazil);
+}
+
+footer ul li a:hover {
+  font-weight: bold;
+}
+
+h1 {
+  color: var(--blue-brazil);
+  font-size: 2rem;
+}
+h1 span {
+  color: var(--yellow-brazil);
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 5%;
+  width: 70%;
 }
 
 nav ul {
@@ -73,51 +129,180 @@ nav ul li a {
 
 .current_page {
   color: var(--green-brazil);
+  font-weight: bold;
 }
 
 /* Portada */
-#portada nav {
-  width: 70%;
-}
-h1 {
-  text-align: center;
-  font-weight: normal;
-  font-size: 7rem;
-  color: var(--blue-brazil);
-  width: 300px;
-  text-shadow: -1px 0 var(--yellow-brazil), 0 1px var(--yellow-brazil),
-    1px 0 var(--yellow-brazil), 0 -1px var(--yellow-brazil);
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  animation: slideInUp;
-  animation-duration: 1s;
-}
-h1 span {
-  font-size: 9rem;
-  color: var(--yellow-brazil);
-}
-
-#portada {
-  background-image: url("./img/Movil.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 100vh;
-}
-
 #portada main {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  margin-top: 18%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
 }
 
-#portada main div:before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+#portada div .subtitulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 4rem;
+  color: var(--blue-brazil);
+}
+#portada div p.subtitulo2 {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  color: var(--blue-brazil);
+}
+
+#portada main picture img {
+  clip-path: polygon(
+    0% 32%,
+    1% 32%,
+    1.5% 28.5%,
+    2% 28%,
+    2.2% 26.5%,
+    4% 26.5%,
+    4.5% 25.5%,
+    6% 25.8%,
+    7% 24.5%,
+    9.5% 24.3%,
+    11% 20%,
+    10.5% 17%,
+    10.8% 15%,
+    9.5% 13.5%,
+    9.5% 12%,
+    11.5% 12%,
+    11.5% 11%,
+    10% 11%,
+    10.7% 9%,
+    14% 7%,
+    14.5% 8.5%,
+    15% 8.5%,
+    15.2% 9%,
+    16.5% 8%,
+    17% 10%,
+    18% 11%,
+    22% 11%,
+    25% 9.8%,
+    25% 9%,
+    25% 9%,
+    27% 8.7%,
+    27% 7.5%,
+    25% 7.5%,
+    25% 4%,
+    23% 2.3%,
+    26% 3%,
+    27% 4%,
+    28% 3.8%,
+    29% 4.5%,
+    29.2% 3%,
+    31% 3%,
+    31.5% 2.5%,
+    33% 2%,
+    34% 0%,
+    35% 0%,
+    35% 1.7%,
+    36% 2%,
+    35.5% 8%,
+    37% 9%,
+    37.2% 10%,
+    41% 10%,
+    42% 9.5%,
+    46% 9.5%,
+    46% 8%,
+    48.5% 7.5%,
+    54% 8%,
+    57% 3%,
+    57.5% 3%,
+    59% 8.5%,
+    60.5% 8.5%,
+    61.5% 10%,
+    61.5% 10.5%,
+    60.5% 12%,
+    61% 14%,
+    65.5% 14.5%,
+    64.5% 16%,
+    64.5% 17%,
+    65% 18%,
+    66% 17.5%,
+    66.5% 16%,
+    70% 16%,
+    71% 17%,
+    72% 17%,
+    74% 19%,
+    77% 20.5%,
+    78% 20%,
+    84% 21.5%,
+    87.5% 22%,
+    95% 27.5%,
+    99% 27.5%,
+    100% 30%,
+    100% 36%,
+    96.5% 41.5%,
+    88.5% 48%,
+    89.5% 55%,
+    87% 61%,
+    85.7% 61%,
+    85.5% 66%,
+    83.5% 69.5%,
+    82% 69.5%,
+    82.5% 71.5%,
+    80% 72%,
+    79.5% 74%,
+    74% 74%,
+    73.5% 74%,
+    71% 74%,
+    67% 76%,
+    66.5% 77%,
+    63% 81%,
+    63% 86%,
+    57.5% 94.5%,
+    55% 96%,
+    54% 99%,
+    51% 100%,
+    52% 98.5%,
+    51.8% 96.5%,
+    50% 94.5%,
+    42% 91%,
+    45% 88%,
+    45.5% 86%,
+    48% 83.5%,
+    51% 82%,
+    51% 79.5%,
+    50% 79%,
+    50% 74%,
+    47.5% 75%,
+    47.5% 72%,
+    46.5% 71.5%,
+    45.7% 70%,
+    41.5% 70.5%,
+    41% 70%,
+    42% 60%,
+    39.5% 55%,
+    35.5% 55%,
+    34% 52%,
+    35% 51.5%,
+    35.5% 50%,
+    24.5% 45%,
+    22% 42%,
+    22% 41%,
+    23% 39.5%,
+    20% 39%,
+    16% 43%,
+    8% 43%,
+    8% 37%,
+    7.5% 39.2%,
+    6.5% 40%,
+    4.5% 40%,
+    4.5% 39%,
+    3% 39%,
+    1% 35.5%,
+    0% 34.5%
+  );
 }
 
 /* Categoria*/
@@ -286,31 +471,27 @@ h1 span {
  *   Tablet   *
  *            */
 
-@media screen and (min-width: 600px) and (max-width: 1025px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   * {
     font-size: 16px;
   }
-  /*Header*/
-
-  nav ul li a {
-    font-size: 1rem;
-  }
-  /* Portada */
-
-  #portada {
-    background-image: url("./img/Tablet.png");
+  /* Header */
+  header div {
+    width: 40%;
   }
 
-  h1 {
-    font-size: 9rem;
-    width: 500px;
-    margin-bottom: 5%;
+  /*Footer*/
+  footer {
+    margin-top: 8%;
   }
 
-  h1 span {
-    font-size: 12rem;
+  /*Portada*/
+  #portada main {
+    margin-top: 7%;
   }
-
+  #portada main p {
+    font-size: 6rem;
+  }
   /*  Detalle */
 
   #mandioca main p {
@@ -332,44 +513,71 @@ h1 span {
     font-size: 16px;
   }
 
-  body {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    background-color: var(--background-color);
-  }
-
   /* Header */
 
+  header {
+    margin-top: 0%;
+    padding: 1%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20%;
+  }
+
   nav {
-    width: 29%;
-    margin: 0 auto;
+    width: 20%;
+    margin: 0;
+    padding-right: 1%;
   }
 
-  #portada nav {
-    width: 29%;
+  /*Footer*/
+
+  footer {
+    margin-top: 5%;
+    padding: 3%;
   }
 
-  nav ul li a:hover {
+  footer ul {
+    width: 20%;
+    margin-top: 2%;
+  }
+  footer p {
+    margin-top: 1%;
+  }
+
+  footer ul li a:hover {
     font-weight: bold;
   }
-
   /* Portada */
 
-  h1 {
-    font-size: 8rem;
-    width: 600px;
+  #portada main {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    text-align: center;
   }
 
-  h1 span {
-    font-size: 10rem;
+  #portada div .subtitulo {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    text-align: center;
   }
-
-  #portada {
-    background-image: url("./img/escritorio.png");
-  }
-  #portada main div:before {
-    height: 90%;
+  #portada div p.subtitulo2 {
+    width: 100%;
+    margin-top: 5%;
   }
 
   /* Categoría*/

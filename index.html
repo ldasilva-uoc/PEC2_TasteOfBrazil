@@ -9,6 +9,11 @@
 </head>
 <body id="portada">
     <header>
+        <div>
+            <img src="./img/logo_svg.svg"
+                 alt="logo de Taste of Brazil">
+            <h1>Taste of <span class="brazil">Brazil</span></h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="" class="current_page">Portada</a></li>
@@ -19,10 +24,35 @@
         </nav>
     </header>
     <main>
+        <picture>
+            <source media="(max-width: 599px)" srcset="./img/img_portada_collage_sm.jpg">
+            <source media="(min-width: 600px)" srcset="./img/img_portada_collage_l.jpg">
+            <img src="./img/img_portada_collage_sm.jpg"
+            alt="collageBrasil">
+          </picture>
         <div>
-            <h1>Taste of <span class="brazil">Brazil</span></h1>
+            <p class="subtitulo">Portal gastronómico Brasileño</p>
+            <p class="subtitulo2">Aprenderás a preparar los platos tipicos brasileño</p>s           
         </div>
+       
     </main>
+    <footer>
+        <picture>
+            <source media="(max-width: 599px)" srcset="./img/bandera_sm.png">
+            <source media="(min-width: 600px)" srcset="./img/bandera_l.png">
+            <img src="./img/bandera_sm.png"
+            alt="Bandera Brasil">
+        </picture>
+
+        <ul>
+            <li><a href="./categoria.html">Categoría</a></li>
+            <li><a href="./presentacion.html">Presentación</a></li>
+            <li><a href="./enlances.html">Enlaces</a></li>
+        </ul>
+
+        <p>2020 Luiza Clara Da Silva Leite</p>
+
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
