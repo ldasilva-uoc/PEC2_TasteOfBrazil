@@ -526,11 +526,11 @@ nav ul li a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 20%;
+    width: 25%;
   }
 
   nav {
-    width: 20%;
+    width: 30%;
     margin: 0;
     padding-right: 1%;
   }
@@ -538,8 +538,8 @@ nav ul li a {
   /*Footer*/
 
   footer {
-    margin-top: 5%;
-    padding: 3%;
+    margin-top: 10%;
+    padding: 2%;
   }
 
   footer ul {
@@ -557,7 +557,7 @@ nav ul li a {
 
   #portada main {
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -580,6 +580,9 @@ nav ul li a {
     margin-top: 5%;
   }
 
+  #portada main picture img {
+    width: 100%;
+  }
   /* Categoría*/
 
   #categoria main section ul li img {
