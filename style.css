@@ -28,7 +28,7 @@ h2 {
   text-transform: uppercase;
   font-weight: lighter;
   border-bottom: 1px solid black;
-  margin-top: 2%;
+  margin-top: 10%;
   padding-bottom: 0.5%;
 }
 
@@ -312,7 +312,6 @@ nav ul li a {
 }
 
 #categoria main {
-  width: 95%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -321,7 +320,7 @@ nav ul li a {
 #categoria main section {
   width: 90%;
   margin: 0 auto;
-  margin-top: 4%;
+  margin-top: 1%;
 }
 
 #categoria main section ul {
@@ -335,13 +334,10 @@ nav ul li a {
 }
 
 #categoria main section ul li {
-  width: 300px;
   /*border: 1px solid red;*/
   margin-top: 2%;
 }
 #categoria main section ul li img {
-  width: 300px;
-  height: 300px;
   border-radius: 100%;
   margin: 0 auto;
   /*border: 1px solid red;*/
@@ -370,8 +366,27 @@ nav ul li a {
   text-align: justify;
 }
 
+#mandioca main div.detalle_plato {
+  background-color: rgba(148, 133, 0, 0.05);
+  display: flex;
+  margin-top: 3%;
+}
+
+#mandioca main div.detalle_plato div {
+  width: 100%;
+  justify-self: center;
+}
+
+#mandioca main div.detalle_plato div div p {
+  color: var(--blue-brazil);
+  margin-bottom: 4%;
+}
+#mandioca main div.detalle_plato div picture img {
+  margin: 5%;
+  float: right;
+}
+
 #mandioca main p {
-  width: 95%;
   margin: 0 auto;
   margin-top: 6%;
 }
@@ -494,6 +509,32 @@ nav ul li a {
   }
   /*  Detalle */
 
+  #mandioca main div.detalle_plato {
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  #mandioca main div.detalle_plato div {
+    width: 100%;
+    justify-self: center;
+  }
+
+  #mandioca main div.detalle_plato div.ingredientes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3%;
+  }
+
+  #mandioca main div.detalle_plato div picture img {
+    margin: 0;
+    padding-right: 6%;
+    float: left;
+  }
+
   #mandioca main p {
     margin-top: 2%;
   }
@@ -586,6 +627,10 @@ nav ul li a {
   }
   /* Categoría*/
 
+  #categoria h2 {
+    margin-top: 2%;
+  }
+
   #categoria main section ul li img {
     display: block;
   }
@@ -625,8 +670,49 @@ nav ul li a {
 
   /*  Detalle */
 
+  #mandioca main div.detalle_plato {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    flex: 1;
+  }
+
+  #mandioca main div.detalle_plato div {
+    width: 100%;
+    justify-self: center;
+  }
+
+  #mandioca main div.detalle_plato div.ingredientes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3%;
+    width: 75%;
+  }
+
+  #mandioca main div.detalle_plato div picture img {
+    margin: 0;
+    padding-right: 6%;
+    float: left;
+  }
+
+  #mandioca main article {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+  }
+  #mandioca main article div.instrucciones {
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 5%;
+  }
+
   #mandioca main p {
-    margin-top: 2%;
+    margin: 0 auto;
   }
 
   #mandioca main h3 {
@@ -637,7 +723,7 @@ nav ul li a {
     margin-bottom: 2%;
   }
   #mandioca iframe {
-    height: 800px;
+    height: 600px;
   }
   #mandioca main h2 {
     font-size: 3rem;
@@ -645,7 +731,6 @@ nav ul li a {
     text-align: right;
   }
   #mandioca main div section:first-child p {
-    width: 80%;
   }
 
   #mandioca main div section:nth-child(2n) div {
@@ -697,6 +782,6 @@ nav ul li a {
 
 @media screen and (min-width: 2560px) {
   * {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
