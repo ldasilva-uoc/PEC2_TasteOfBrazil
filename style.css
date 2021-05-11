@@ -127,6 +127,19 @@ nav ul li a {
   color: var(--blue-brazil);
 }
 
+nav ul li a:not(.current_page)::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: var(--blue-brazil);
+  transition: 300ms;
+}
+
+nav ul li a:not(.current_page):hover::after {
+  width: 100%;
+}
+
 .current_page {
   color: var(--green-brazil);
   font-weight: bold;
@@ -315,10 +328,10 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  width: 95%;
 }
 
 #categoria main section {
-  width: 90%;
   margin: 0 auto;
   margin-top: 1%;
 }
@@ -406,12 +419,11 @@ nav ul li a {
 
 #mandioca iframe {
   width: 100%;
+  height: 220px;
   margin-bottom: 7%;
 }
 
 #mandioca section:last-child img {
-  width: 100px;
-  height: 100px;
   border-radius: 100%;
   align-self: center;
 }
@@ -428,6 +440,7 @@ nav ul li a {
 
 #mandioca section:last-child div div p {
   text-indent: 0;
+  font-size: 0.8rem;
 }
 
 #mandioca section:last-child div div p:first-child {
@@ -436,10 +449,6 @@ nav ul li a {
 }
 
 /* Presentacion */
-
-#presentacion img {
-  width: 50%;
-}
 
 #presentacion main h2 {
   text-align: right;
@@ -451,19 +460,149 @@ nav ul li a {
   margin: 0 auto;
   text-align: justify;
 }
-#presentacion main p {
-  padding-bottom: 3%;
-}
+
 #presentacion div p:first-child {
   text-align: center;
   padding-bottom: 4%;
+  margin-top: 5%;
   font-size: 2rem;
   color: var(--green-brazil);
 }
-#presentacion main img {
-  display: block;
-  margin: auto;
-  padding-bottom: 6%;
+
+#presentacion svg {
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  width: 300px;
+  height: 240px;
+}
+
+#triangle_right_svg,
+#triangle_left_svg {
+  fill: #03852d;
+  -webkit-animation: triangle 2s forwards 2s;
+  animation: triangle 2s forwards 2s;
+  opacity: 0;
+  transform-origin: center;
+}
+
+#triangle_left_svg {
+}
+
+#circle_svg {
+  fill: #002277;
+  -webkit-animation: scaleCircle 1s linear 0s;
+  animation: scaleCircle 1s linear 0s;
+  transform-origin: center;
+}
+
+#rombo_svg_left,
+#rombo_svg_right {
+  fill: #e2cb00;
+}
+
+#rombo_svg_left {
+  -webkit-animation: OpenRomboLeft 2s linear 0s;
+  animation: OpenRomboLeft 2s linear 0s;
+  transform-origin: 150px 209px;
+}
+
+#rombo_svg_right {
+  -webkit-animation: OpenRomboRight 2s linear 0s;
+  animation: OpenRomboRight 2s linear 0s;
+  transform-origin: 150px 209px;
+}
+
+@-webkit-keyframes scaleCircle {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes OpenRomboLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes OpenRomboRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes triangle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleCircle {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes OpenRomboLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes OpenRomboRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes triangle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Enlaces */
@@ -723,7 +862,7 @@ nav ul li a {
     margin-bottom: 2%;
   }
   #mandioca iframe {
-    height: 600px;
+    height: 300px;
   }
   #mandioca main h2 {
     font-size: 3rem;
@@ -738,8 +877,9 @@ nav ul li a {
 
   /* Presentacion */
 
-  #presentacion img {
-    width: 40%;
+  #presentacion svg {
+    margin-top: 3%;
+    margin-bottom: 10%;
   }
 
   #presentacion main h2 {
