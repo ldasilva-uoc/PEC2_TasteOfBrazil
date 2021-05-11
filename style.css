@@ -155,6 +155,7 @@ nav ul li a:not(.current_page):hover::after {
 
 #portada div .subtitulo {
   position: absolute;
+  font-weight: bold;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -172,6 +173,9 @@ nav ul li a:not(.current_page):hover::after {
 }
 
 #portada main picture img {
+  -webkit-animation: clipAnimation 2s forwards 0s;
+  animation: clipAnimation 2s forwards 0s;
+  opacity: 0;
   clip-path: polygon(
     0% 32%,
     1% 32%,
@@ -316,6 +320,24 @@ nav ul li a:not(.current_page):hover::after {
     1% 35.5%,
     0% 34.5%
   );
+}
+
+@-webkit-keyframes clipAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes clipAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Categoria*/
@@ -719,7 +741,7 @@ svg {
   /*Footer*/
 
   footer {
-    margin-top: 5%;
+    margin-top: 10%;
     padding: 2%;
   }
 
@@ -769,6 +791,7 @@ svg {
 
   #categoria h2 {
     margin-top: 2%;
+    margin-bottom: 3%;
   }
 
   #categoria main section ul li img {
@@ -867,7 +890,6 @@ svg {
   #mandioca main h2 {
     font-size: 3rem;
     margin-top: 2%;
-    text-align: right;
   }
 
   #mandioca main div section:nth-child(2n) div {
@@ -909,9 +931,10 @@ svg {
 
   /* Enlaces */
   #enlaces main h2 {
-    text-align: right;
+    margin-top: 2%;
     margin-bottom: 5%;
   }
+
   #enlaces main div {
     width: 80%;
     margin: 0 auto;
