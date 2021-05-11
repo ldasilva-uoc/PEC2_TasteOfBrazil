@@ -324,7 +324,7 @@ nav ul li a:not(.current_page):hover::after {
 
 @-webkit-keyframes clipAnimation {
   0% {
-    opacity: 0;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
@@ -333,7 +333,7 @@ nav ul li a:not(.current_page):hover::after {
 
 @keyframes clipAnimation {
   0% {
-    opacity: 0;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
@@ -513,9 +513,6 @@ svg {
   animation: triangle 2s forwards 2s;
   opacity: 0;
   transform-origin: center;
-}
-
-#triangle_left_svg {
 }
 
 #circle_svg {
@@ -885,7 +882,7 @@ svg {
     margin-bottom: 2%;
   }
   #mandioca iframe {
-    height: 300px;
+    height: 500px;
   }
   #mandioca main h2 {
     font-size: 3rem;
@@ -944,5 +941,8 @@ svg {
 @media screen and (min-width: 2560px) {
   * {
     font-size: 25px;
+  }
+  #mandioca iframe {
+    height: 800px;
   }
 }
