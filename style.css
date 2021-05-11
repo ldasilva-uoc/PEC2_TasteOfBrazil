@@ -328,6 +328,7 @@ nav ul li a:not(.current_page):hover::after {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+
   width: 95%;
 }
 
@@ -775,7 +776,6 @@ svg {
   }
   #categoria main section ul li a {
     position: relative;
-    left: 12%;
   }
 
   #categoria main section ul li a:hover .name_categoria {
