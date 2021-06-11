@@ -176,6 +176,7 @@ nav ul li a:not(.current_page):hover::after {
   -webkit-animation: clipAnimation 2s forwards 0s;
   animation: clipAnimation 2s forwards 0s;
   opacity: 0;
+  aspect-ratio: attr(width) / attr(height);
   clip-path: polygon(
     0% 32%,
     1% 32%,
