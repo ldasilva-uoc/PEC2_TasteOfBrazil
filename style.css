@@ -427,6 +427,10 @@ nav ul li a:not(.current_page):hover::after {
   margin: 5%;
   float: right;
 }
+#mantioca .ingredientes img {
+  height: auto;
+  width: 100%;
+}
 
 #mandioca main p {
   margin: 0 auto;
@@ -455,6 +459,8 @@ nav ul li a:not(.current_page):hover::after {
 #mandioca section:last-child img {
   border-radius: 100%;
   align-self: center;
+  height: auto;
+  width: 100%;
 }
 #mandioca section:last-child div div {
   display: flex;

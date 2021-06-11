@@ -48,8 +48,13 @@
         <picture>
             <source media="(max-width: 599px)" srcset="./img/bandera_sm.png">
             <source media="(min-width: 600px)" srcset="./img/bandera_l.png">
-            <img loading="lazy" src="./img/bandera_sm.png"
-                alt="Bandera Brasil">
+                <img 
+                loading="lazy" 
+                width="80"
+                height="53"
+                src="./img/bandera_l.png"
+                srcset="./img/bandera_sm.png 400w, ./img/bandera_l.png 800w"
+                alt="Bandera Brasil" />
         </picture>
 
         <ul>
